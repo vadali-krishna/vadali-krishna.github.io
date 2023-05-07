@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="styles-prequisite.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Prequisites to solving the Cube</title>
+   </head>
+   <body>
+      <nav>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="prequisite.html" target="_blank">Prequisites</a></li>
+            <li><a href="tutorial.html" target="_blank">Tutorial</a></li>
+            <li><a href="algorithms.html" target="_blank">Algorithms</a></li>
+         </ul>
+      </nav>
+
+      <h1 class="title-1">Get to know your cube</h1>
+      <p class="text-1">Before you get into the tutorial, you should be familiar with the dynamics of the cube, i.e how the cube moves, what are the pieces involved in solving the cube, etc.</p>      
+      <h2 class="title-2">Pieces of a cube</h2>
+
+      <table>
+        <tr>
+          <td class="cube-corner-pieces"><img src="images/cube-corner-pieces.jpg" ></td>
+          <td class="cube-corner-pieces-desc">
+            <b>Corner pieces</b> - There are 8 corner pieces in a standard 3x3 Rubiks cube. The corners are present in 3 different panels, and can be oriented/moved in 3 different ways.
+          </td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td class="cube-corner-pieces"><img src="images/cube-edge-pieces.png" ></td>
+          <td class="cube-corner-pieces-desc">
+            <b>Edge pieces</b> - There are 12 edge pieces in a standard 3x3 Rubiks cube. These edge pieces can be present in 2 panels, hence they can be oriented in 2 ways.
+          </td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td class="cube-corner-pieces"><img src="images/cube-center-pieces.png" ></td>
+          <td class="cube-corner-pieces-desc">
+            <b>Center pieces</b> - There are 6 center pieces in a standard 3x3 Rubiks cube. These pieces are only preset in one panel, hence they are a single orientation piece.
+          </td>
+        </tr>
+      </table>
+
+      <h1 class="title-3">Cube Notation</h1>
+      <p class="text-2">A set of algorithms are used to solve a cube. These algorithms are based off of the notations shown below.</p>
+    
+      <h2 class="title-4">Face turns</h2>
+      <p class="text-3">The basic face turns are <b>U</b>p, <b>D</b>own, <b>R</b>ight, <b>L</b>eft, <b>F</b>ront, and <b>B</b>ack.</p>
+      <p class="text-3">Each move implicates the turn that particular side clockwise.</p>
+   
+      <table class="face-turns">
+        <tr>
+          <th><img src="images/cube-notations/U.png"></th>
+          <th><img src="images/cube-notations/D.png"></th>
+          <th><img src="images/cube-notations/R.png"></th>
+          <th><img src="images/cube-notations/L.png"></th>
+          <th><img src="images/cube-notations/F.png"></th>
+          <th><img src="images/cube-notations/B.png"></th>
+        </tr>
+        <tr>
+          <th><b>U</b></th>
+          <th><b>D</b></th>
+          <th><b>R</b></th>
+          <th><b>L</b></th>
+          <th><b>F</b></th>
+          <th><b>B</b></th>
+        </tr>
+      </table>
+
+      <p class="text-4">An apostrophe (pronounced as <i>prime</i>) means to turn the desired face in the opposite direction (counter-clockwise).</p>
+   
+      <table class="face-turns">
+        <tr>
+          <th><img src="images/cube-notations/U'.png"></th>
+          <th><img src="images/cube-notations/D'.png"></th>
+          <th><img src="images/cube-notations/R'.png"></th>
+          <th><img src="images/cube-notations/L'.png"></th>
+          <th><img src="images/cube-notations/F'.png"></th>
+          <th><img src="images/cube-notations/B'.png"></th>
+        </tr>
+        <tr>
+          <th><b>U'</b></th>
+          <th><b>D'</b></th>
+          <th><b>R'</b></th>
+          <th><b>L'</b></th>
+          <th><b>F'</b></th>
+          <th><b>B'</b></th>
+        </tr>
+      </table>
+
+      <h2 class="title-4">Wide  moves</h2>
+      <p class="text-3">Wide moves turn 2 layers at once, and are listed with smaller case letters such as <b>u</b>, <b>d</b>, <b>r</b>, <b>l</b>, <b>f</b>, and <b>b</b>.</p> 
+      <p class="text-3">Each move implicates to turn that particular side clockwise.</p>
+
+      <table class="face-turns">
+        <tr>
+          <th><img src="images/cube-notations/u''.png"></th>
+          <th><img src="images/cube-notations/d''.png"></th>
+          <th><img src="images/cube-notations/r''.png"></th>
+          <th><img src="images/cube-notations/l''.png"></th>
+          <th><img src="images/cube-notations/f''.png"></th>
+          <th><img src="images/cube-notations/b''.png"></th>
+        </tr>
+        <tr>
+          <th><b>u</b></th>
+          <th><b>d</b></th>
+          <th><b>r</b></th>
+          <th><b>l</b></th>
+          <th><b>f</b></th>
+          <th><b>b</b></th>
+        </tr>
+      </table>
+
+      <h2 class="title-4">Cube rotations</h2>
+      <p class="text-3">Cube rotations are written using the letters <b>x</b>, <b>y</b>, and <b>z</b>.</p> 
+      <p class="text-3"><b>x</b> follows the <b>R</b> direction, <b>y</b> follows the <b>U</b> direction, and <b>z</b> follows the <b>F</b> direction.</p>
+
+      <table class="face-turns">
+        <tr>
+          <th><img src="images/cube-notations/w.png"></th>
+          <th><img src="images/cube-notations/x.png"></th>
+          <th><img src="images/cube-notations/y.png"></th>
+          <th><img src="images/cube-notations/z.png"></th>
+
+        </tr>
+        <tr>
+          <th><b>No rotation</b></th>
+          <th><b>x</b></th>
+          <th><b>y</b></th>
+          <th><b>z</b></th>
+        </tr>
+      </table>
+
+      <h2 class="title-4">Slice moves</h2>
+      <p class="text-3">Slice moves are written using the letters <b>M</b>, <b>E</b>, and <b>S</b>. Slice moves only turn the middle layer.</p> 
+      <p class="text-3"><b>M</b> follows the <b>L</b> direction, <b>E</b> follows the <b>D</b> direction, and <b>S</b> follows the <b>F</b> direction.</p>
+
+      <table class="face-turns">
+        <tr>
+          <th><img src="images/cube-notations/M.png"></th>
+          <th><img src="images/cube-notations/E.png"></th>
+          <th><img src="images/cube-notations/S.png"></th>
+
+        </tr>
+        <tr>
+          <th><b>M</b></th>
+          <th><b>E</b></th>
+          <th><b>S</b></th>
+        </tr>
+      </table>
+
+      <p class="final-line">That's it! Now you have all the prior knowledge you need to start learning how to solve the cube. Head on to the tutorial tab, or click <a href="tutorial.html">here.</a></p>
+
+    </body>
+</html>
