@@ -14,6 +14,9 @@ nav{
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
 }
 nav .logo{
   color: #fff;
@@ -117,29 +120,91 @@ input[type="checkbox"]{
 .home-main {
   text-align: center;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 300px;
+  margin-top: 120px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.info-0 {
+  text-align: center;
+  padding-top: 710px;
+  font-size: 30px;
+}
+
 .info-1 {
   text-align: center;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 700px;
+  padding-top: 150px;
   font-size: 40px;
 }
 
 .info-2 {
   text-align: center;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 120px;
+  padding-top: 120px;
   font-size: 40px;
   margin-bottom: 250px;
 }
 
-.container {
-  position: relative;
-  text-align: center;
+.prequisite {
+  text-decoration: none;
+  color: rgb(15, 111, 124);
+}
+
+.algorithm {
+  text-decoration: none;
+  color: rgb(15, 111, 124);
+}
+
+.prequisite-button {
+  border: none;
+  background-color: aqua;
+  height: 60px;
+  width: 240px;
+  margin-left: 350px;
+  margin-bottom: 200px;
+  font-size: 30px;
+  border-radius: 30px;
+  font-weight: 650;
+}
+
+.prequisite-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.tutorial-button {
+  border: none;
+  background-color: rgb(255, 204, 0);
+  height: 60px;
+  width: 240px;
+  margin-left: 30px;
+  margin-bottom: 200px;
+  font-size: 30px;
+  border-radius: 30px;
+  font-weight: 650;
+}
+
+.tutorial-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.algorithms-button {
+  border: none;
+  background-color: rgb(64, 192, 21);
+  height: 60px;
+  width: 240px;
+  margin-left: 30px;
+  margin-bottom: 200px;
+  font-size: 30px;
+  border-radius: 30px;
+  font-weight: 650;
+}
+
+.algorithms-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
